@@ -31,7 +31,7 @@ Name: "{commonprograms}\StormGamesStudios\Desinstalar Content Warning"; Filename
 
 [Registry]
 ; Guardar ruta de instalación para poder desinstalar
-Root: HKCU; Subkey: "Software\Content Warning!"; ValueType: string; ValueName: "Install_Dir"; ValueData: "{app}"
+Root: HKCU; Subkey: "Software\Content Warning"; ValueType: string; ValueName: "Install_Dir"; ValueData: "{app}"
 
 [UninstallDelete]
 ; Eliminar carpeta del appdata y acceso directo
