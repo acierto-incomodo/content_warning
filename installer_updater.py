@@ -14,8 +14,8 @@ DOWNLOAD_DIR.mkdir(exist_ok=True)
 LAUNCHER_EXE = DOWNLOAD_DIR / "win_launcher.exe"
 VERSION_FILE = DOWNLOAD_DIR / "version_win_launcher.txt"
 
-URL_LAUNCHER = "https://github.com/acierto-incomodo/unrailed/releases/latest/download/launcher_win.exe"
-URL_VERSION  = "https://github.com/acierto-incomodo/unrailed/releases/latest/download/version_win_launcher.txt"
+URL_LAUNCHER = "https://github.com/acierto-incomodo/content_warning/releases/latest/download/launcher_win.exe"
+URL_VERSION  = "https://github.com/acierto-incomodo/content_warning/releases/latest/download/version_win_launcher.txt"
 
 # ---------------- Utils -------------------
 
