@@ -1,6 +1,6 @@
 [Setup]
 AppName=Content Warning by StormGamesStudios
-AppVersion=1.0.3
+AppVersion=1.0.4
 DefaultDirName={userappdata}\StormGamesStudios\NewGameDir\ContentWarning
 DefaultGroupName=StormGamesStudios
 OutputDir=C:\Users\mapsp\Documents\GitHub\content_warning\output
@@ -11,7 +11,7 @@ AppCopyright=Copyright © 2025 StormGamesStudios. All rights reserved.
 VersionInfoCompany=StormGamesStudios
 AppPublisher=StormGamesStudios
 SetupIconFile=content_warning.ico
-VersionInfoVersion=1.0.3.0
+VersionInfoVersion=1.0.4.0
 DisableDirPage=yes
 DisableProgramGroupPage=yes
 
