@@ -12,7 +12,7 @@ from PySide6 import QtCore, QtWidgets, QtGui
 
 # ---------------- CONFIG ------------------
 
-LAUNCHER_VERSION = "1.0.0"
+LAUNCHER_VERSION = "1.0.2"
 
 BUILD_URL_WIN = "https://github.com/acierto-incomodo/content_warning/releases/latest/download/Build.zip"
 BUILD_URL_LINUX = "https://github.com/acierto-incomodo/content_warning/releases/latest/download/Build.zip"
@@ -321,6 +321,14 @@ class LauncherWindow(QtWidgets.QWidget):
     def on_update_done(self, version):
         self.progress.setVisible(False)
         self.set_status("Instalación completada." if not self.game_installed() else "Actualización completada.")
+        
+        # Limpiar carpeta de descargas
+        try:
+            if DOWNLOAD_DIR.exists():
+                shutil.rmtree(DOWNLOAD_DIR)
+            DOWNLOAD_DIR.mkdir(exist_ok=True)
+        except Exception:
+            pass
         
         # Habilitar botones nuevamente
         self.btn_check.setEnabled(True)
